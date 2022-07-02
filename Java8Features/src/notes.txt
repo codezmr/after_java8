@@ -1,0 +1,21 @@
+Features in Java8
+-------------------
+1. Interface Enhancement
+2. Functional Interface
+3. Lambda Expression
+4. Stream API
+5. Date & Time API
+
+1. Interface Enhancement
+=========================
+a. Introduction of default methods - Supports backward compatibility
+    1. default method is available inside the implementing class
+    2. there can be more than 1 default method in interface
+    3. default method helps in bringing backward compatibility
+
+b. Introduction of static method
+    1. static method is not available inside the implementing class
+    2. there can be more than 1 static method in interface
+    3. static method helps in bringing backward compatibility
+    4. we cannot override static method
+    5. Java 8 onwards main method can be part of interface
