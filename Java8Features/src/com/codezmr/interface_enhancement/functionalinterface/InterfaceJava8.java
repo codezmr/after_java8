@@ -2,21 +2,22 @@ package com.codezmr.interface_enhancement.functionalinterface;
 
 @FunctionalInterface
 public interface InterfaceJava8 {
-	
-	public void test1();
-	
-	
-	public default void m1() {
-		
-	}
-	
-	public default void m2() {
-		
-	}
-	
-	public static String f1() {
-		return "FunctionalInterface";
-	}
+
+    public void show();// 1 abstract method
+
+    public default void details(){//more than 1 default method
+
+    }
+    public default void details2(){//more than 1 default method
+
+    }
+    public static String enquire(){//more than 1 static method
+        return "Functional Interface";
+    }
+    public static String enquire2(){//more than 1 static method
+        return "Functional Interface";
+    }
+
 }
 
 /*
