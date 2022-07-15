@@ -32,6 +32,7 @@ public class Example3 {
 		for (Integer num : numberList) {
 
 			// if(isGreater.test(num) && isOddTest.test(num))
+			
 			if (isGreater.and(isOddTest).test(num)) {
 
 				System.out.println("Odd Number Greater Than Ten: " + num);
