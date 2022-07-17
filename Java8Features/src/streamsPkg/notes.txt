@@ -1,0 +1,4 @@
+Streams- java.util.stream
+
+-Helps to operate on collections object.
+

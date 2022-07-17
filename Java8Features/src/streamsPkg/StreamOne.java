@@ -1,7 +1,12 @@
 package streamsPkg;
 
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamOne {
 
@@ -18,7 +23,7 @@ public class StreamOne {
 		numbers.add(7);
 		
 		System.out.println(numbers);
-		
+		//Until JAVA-7 way
 		
 		List<Integer> oddNumber = new ArrayList<Integer>();
 		for(Integer num : numbers) {
@@ -28,6 +33,61 @@ public class StreamOne {
 		}
 		
 		System.out.println(oddNumber);
+		
+		/* JAVA-8 Stream */
+		
+		//Stream<Integer> strm =  numbers.stream();
+		
+		Predicate<Integer> predicate = num -> num%2 !=0;
+		
+		oddNumber = numbers.stream().filter(predicate).collect(Collectors.toList());
+			
+		System.out.println("Odd Nunber Using JAVA-8 Stream filter method: "+oddNumber);
+		
+		
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
