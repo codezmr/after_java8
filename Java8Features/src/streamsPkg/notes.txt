@@ -1,4 +1,12 @@
 Streams- java.util.stream
 
 -Helps to operate on collections object.
+- 
+-- distinct method removes duplicates and returns unique list
+
+-- skip method skips the specified number of elements from starting
+
+-- peak method helps in debugging to see what is happening after a particular
+   operation on the stream 
+	
 
