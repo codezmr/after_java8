@@ -1,4 +1,4 @@
-package com.codezmr.interface_enhancement.doubleColon;
+package com.codezmr.interface_enhancement.doubleColon.methodRefrance;
 
 public class Employee {
 	
@@ -10,5 +10,10 @@ public class Employee {
 	public void eid(int id) {
 		
 		System.out.println("Employee Id is: "+id);
+	}
+	
+	public static void name(String ename) {
+		
+		System.out.println("Employee Name is : "+ename);
 	}
 }

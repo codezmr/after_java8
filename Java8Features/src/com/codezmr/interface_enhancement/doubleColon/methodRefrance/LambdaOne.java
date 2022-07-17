@@ -1,4 +1,4 @@
-package com.codezmr.interface_enhancement.doubleColon;
+package com.codezmr.interface_enhancement.doubleColon.methodRefrance;
 
 @FunctionalInterface
 public interface LambdaOne {
