@@ -26,7 +26,55 @@ public class StreamMapFilter {
 		
 		System.out.println("Length of fruits whose length is greater than 5 : "
 				+ fruits.stream().filter(f -> f.length() > 5).map(l -> l.length()).collect(Collectors.toList()));
-
+		
+		
+		//How many fruits exist that length is grater than 5.
+			
+		
+		Long totalFruits = fruits.stream().filter(f -> f.length() > 5).count();
+		
+		System.out.println(totalFruits + " fruits exist that length is grater than 5");
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
