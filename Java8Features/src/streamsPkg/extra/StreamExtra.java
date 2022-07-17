@@ -24,6 +24,7 @@ public class StreamExtra {
 		
 		Stream s4 = Stream.concat(s2, s3).distinct();
 		
+		
 		s4.forEach(System.out::println);
 		
 
